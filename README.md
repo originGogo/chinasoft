@@ -14,7 +14,7 @@ git clone https://github.com/originGogo/chinasoft.git
 🌿 3. 创建并切换到自己的分支
 每个人建议使用自己的分支开发，避免冲突：
 git checkout -b yourname-feature   
-# 例如：zhangsan-login
+例如：zhangsan-login
 
 🧱 4. 提交代码
 git add .
