@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gogo.psy.user.mapper.UserInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.gogo.psy.common.pojo.UserInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="wxOpenId" column="wx_open_id" jdbcType="VARCHAR"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="salt" column="salt" jdbcType="VARCHAR"/>
+            <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="CHAR"/>
+            <result property="avatarUrl" column="avatar_url" jdbcType="VARCHAR"/>
+            <result property="isFirstLogin" column="is_first_login" jdbcType="TINYINT"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,wx_open_id,account,
+        password,salt,nickname,
+        gender,avatar_url,is_first_login,
+        status,create_time,update_time,
+        is_deleted
+    </sql>
+</mapper>
